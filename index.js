@@ -10,3 +10,8 @@ function moveDodgerLeft() {
     dodger.style.left = `${left - 1}px`;
   }
 }
+dodger.addEventListener("keydown", function(e) {
+  if (e.key === "ArrowLeft") {
+    moveDodgerLeft();
+  }
+});
